@@ -18,15 +18,19 @@ public class PriortyQueue {
 
     public void enQueue(int value) {
         int i;
+        int a=0;
         if (!this.isFull()) {
             if (this.nElemts == 0) {
                 this.array[this.rear] = value;
             } else {
-                for (i = this.nElemts - 1; i >= 0; i--) {
+                a=0;
+                for (i = this.nElemts - 1; i >= 0 && a==0; i--) {
                     if (value > this.array[i]) {
                         this.array[i + 1] = this.array[i];
                     } else {
-                        break;
+                        a=1;//break kullanımı yerine yapılan değişiklik
+                        i++;
+                        //break;
                     }
                 }
                 this.array[i + 1] = value;
