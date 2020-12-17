@@ -23,7 +23,7 @@ Güz yarı yılı laboratuvar uygulamaları
 * Parsing Arithmethic Expressions
 * Recursive
 * Advanced Sorting Algorithms
-  -Shell Sort
-  -Quick Sort
-  -Radix Sort
+  - Shell Sort
+  - Quick Sort
+  - Radix Sort
 * Binary Tree
