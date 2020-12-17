@@ -7,7 +7,7 @@ Güz yarı yılı laboratuvar uygulamaları
 
 * Ders Kitabı : Robert Lafore-Data Structures and Algorithms in Java (Secon Edition)
 
-##Konular
+#Konular
 
 * Diziler
 * 
