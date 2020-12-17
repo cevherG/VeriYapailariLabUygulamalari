@@ -10,4 +10,6 @@ Güz yarı yılı laboratuvar uygulamaları
 ### Konular
 
 * Diziler
-* 
+* Simple Sorting Algorithm
+  -- Bouble Sort
+  -- 
