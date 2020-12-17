@@ -11,6 +11,19 @@ Güz yarı yılı laboratuvar uygulamaları
 
 * Diziler
 * Simple Sorting Algorithm
-  
-  -- Bouble Sort
-  --
+  - Bouble Sort
+  - Selection Sort
+  - Insertion Sort
+* Stack
+* Queue
+  - Priorty Queue
+* Linked List
+  - Double-Ended Linked List
+  - Doubly Linked List
+* Parsing Arithmethic Expressions
+* Recursive
+* Advanced Sorting Algorithms
+  -Shell Sort
+  -Quick Sort
+  -Radix Sort
+* Binary Tree
