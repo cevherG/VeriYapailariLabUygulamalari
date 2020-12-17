@@ -21,6 +21,9 @@ Güz yarı yılı laboratuvar uygulamaları
   - Double-Ended Linked List
   - Doubly Linked List
 * Parsing Arithmethic Expressions
+  - postfix
+  - prefix
+  - infix
 * Recursive
 * Advanced Sorting Algorithms
   - Shell Sort
