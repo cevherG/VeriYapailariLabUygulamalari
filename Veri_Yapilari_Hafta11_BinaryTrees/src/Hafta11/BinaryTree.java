@@ -31,9 +31,9 @@ public class BinaryTree {
         }
         return current.key;
     }
-    
+
     public int findMax(Node current) {
-        while (current.right != null) {
+         while (current.right != null) {
             current = current.right;
         }
         return current.key;
@@ -44,41 +44,44 @@ public class BinaryTree {
     }
 
     private Node deleteRecord(Node current, int value) {
-        if (current == null) {
+        if (current == null) {//dugum bos işlemi için
             return null;
         }
-        if (value > current.key) {
+        if (value < current.key) {//solda arama
             current.left = deleteRecord(current.left, value);
-        } else if (value < current.key) {
+        } else if (value > current.key) {//sagdan arama
             current.right = deleteRecord(current.right, value);
-        }else{
-            // one child
-            if (current.left==null) {
+        } else {//aranan elemman bulundu ise yapılacaklar
+            if (current.left == null) {
                 return current.right;
-            }else if (current.right==null) {
+            } else if (current.right == null) {
                 return current.left;
             }
-            
-            current.key =this.findMin(current.right);
-            
-            current.right=this.deleteRecord(current.right, current.key);
-            
+            current.key = this.findMin(current.right);//silinecek degere bulunan min deger atıldı
+            current.right = this.deleteRecord(current.right, current.key);//
         }
         return current;
     }
 
-    public Node find(int value) {
-        return findRecord(root, value);
+    public int find(int value) {
+        Node node = findRecord(root, value);
+        int i;
+        if (node == null) {
+            i = -1;
+        } else {
+            i = node.key;
+        }
+        return i;
     }
 
     private Node findRecord(Node current, int value) {
         if (current == null || current.key == value) {
             return current;
         }
-        if (current.key < value) {
-            findRecord(current.right, value);
+        if (value > current.key) {
+            return findRecord(current.right, value);
         }
-        return findRecord(current.right, value);
+        return findRecord(current.left, value);
     }
 
     public void preorderTraversal() {
