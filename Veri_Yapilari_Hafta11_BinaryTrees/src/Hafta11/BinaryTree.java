@@ -31,9 +31,12 @@ public class BinaryTree {
         }
         return current.key;
     }
-
-    public Node findMax() {
-        return null;
+    
+    public int findMax(Node current) {
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.key;
     }
 
     public void delete(int value) {
