@@ -1,47 +1,48 @@
 package Hafta6;
 
+import Hafta6.Stack;
+
 public class PostfixCalculator {
 
-    private Stack stack;
     private String input;
+    private Stack stack;
 
     public PostfixCalculator(String input) {
         this.input = input;
-        this.stack = new Stack(this.input.length());
+        stack = new Stack(input.length());
     }
 
     public int doCalculate() {
-        char ch;
-        int num1, num2, sum;
-        for (int i = 0; i < this.input.length(); i++) {
-            ch = this.input.charAt(i);
-            if (ch >= '0' && ch <= '9') {
-                this.stack.push(Character.getNumericValue(ch));
+
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+
+            if (Character.isDigit(ch)) {
+                stack.push(ch - '0');
             } else {
-                num1 = stack.pop();
-                num2 = stack.pop();
+                int a2 = stack.pop();
+                int a1 = stack.pop();
+
                 switch (ch) {
                     case '+':
-                        sum = num1 + num2;
+                        stack.push(a1 + a2);
                         break;
+
                     case '-':
-                        sum = num1 + num2;
+                        stack.push(a1 - a2);
                         break;
-                    case '*':
-                        sum = num1 * num2;
-                        break;
+
                     case '/':
-                        sum = num1 / num2;
+                        stack.push(a1 / a2);
                         break;
-                    default:
-                        sum = 0;
+
+                    case '*':
+                        stack.push(a1 * a2);
                         break;
                 }
-                stack.push(sum);
-            }//end else
-        }//end for
-        sum=stack.pop();
-        return sum;
-    }//end doCalculate method
+            }
+        }
+        return stack.pop();
+    }
+}
 
-}//end class
