@@ -36,6 +36,11 @@ public class InfixToPostfix {
                     break;
             }//end switch
         }//end for
+        /*
+        while (!stack.isEmpty()) {
+            output = output + stack.popChar();
+        }
+        return output;*/
         return this.output += this.stack.pop();
     }//end method
 
@@ -74,27 +79,3 @@ public class InfixToPostfix {
         }
     }//end method
 }//end class
-
-/*
-  while (!stack.isEmpty()) {
-            char opTop = stack.pop();
-            if (opTop == '(') {
-                stack.push(opTop);
-                break;
-            } else {
-                int a2;
-                if (opTop == '+' || opTop == '-') {
-                    a2 = 1;
-                } else {
-                    a2 = 2;
-                }
-                if (a2 < a1) {
-                    stack.push(opTop);
-                    break;
-                } else {
-                    output = output + opTop;
-                }
-            }
-        }
-        stack.push(opThis);
- */
