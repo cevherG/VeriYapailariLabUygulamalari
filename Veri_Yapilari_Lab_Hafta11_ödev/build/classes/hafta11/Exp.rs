@@ -1,0 +1,2 @@
+GFG$nptr
+GFG
