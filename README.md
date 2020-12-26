@@ -30,3 +30,4 @@ Güz yarı yılı laboratuvar uygulamaları
   - Quick Sort
   - Radix Sort
 * Binary Tree
+* AVL Tree
