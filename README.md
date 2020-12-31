@@ -31,5 +31,5 @@ Güz yarı yılı laboratuvar uygulamaları
   - Radix Sort
 * Binary Tree
 * AVL Trees
-* 2-3 Trees (and Hash)
+* 2-3-4 Trees (and Hash)
 * Graph
