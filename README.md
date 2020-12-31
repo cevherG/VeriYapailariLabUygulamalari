@@ -32,4 +32,4 @@ Güz yarı yılı laboratuvar uygulamaları
 * Binary Tree
 * AVL Trees
 * 2-3 Trees (and Hash)
-* Graf
+* Graph
