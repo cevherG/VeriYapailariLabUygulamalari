@@ -30,6 +30,6 @@ Güz yarı yılı laboratuvar uygulamaları
   - Quick Sort
   - Radix Sort
 * Binary Tree
-* AVL Trees
-* 2-3-4 Trees (and Hash)
-* Graph
+* AVL Trees:heavy_multiplication_x:
+* 2-3-4 Trees (and Hash Tables and Heaps):heavy_multiplication_x:
+* Graph:heavy_multiplication_x:
